@@ -1,0 +1,190 @@
+/* --------- */
+/* Site Mode */
+
+*{
+    -webkit-font-smoothing  : antialiased ; /* Fancy render               */
+    -moz-osx-font-smoothing : grayscale   ; /* Fancy render               */
+    -webkit-touch-callout   : none        ; /* No selection allowed       */
+    -webkit-user-select     : none        ; /* No selection allowed       */
+    -khtml-user-select      : none        ; /* No selection allowed       */
+    -moz-user-select        : none        ; /* No selection allowed       */
+    -ms-user-select         : none        ; /* No selection allowed       */
+    user-select             : none        ; /* No selection allowed       */
+}
+
+body{
+
+    width            : 100%            ; /* Fill the Parent         */
+    height           : auto            ; /* Wrap the Children       */
+    margin           : auto            ; /* Center Horizontally     */
+    display          : block           ; /* Stack the Elements      */
+    padding          : auto            ; /* No Padding              */
+    background-color : #004c8b         ; /* Darkness, My old Friend */
+}
+
+/* ------------- */
+/* Prime Wrapper */
+
+#wrapper_prime{
+
+    width            : 100%        ; /* Fill the parent      */
+    max-width        : 100%        ; /* Fill the parent      */
+    height           : auto        ; /* Wrap Children        */
+    margin           : auto        ; /* Center Horizontally  */
+    display 		 : block       ; /* Stack the Elements   */
+    background-color : transparent ; /* Invisible Background */
+
+}
+
+#wrapper_header{
+
+    width              : 100%                        ; /* Fill the Parent Width      */
+    max-width          : 100%                        ; /* Keep it at 100%            */
+    height             : auto                        ; /* Wrap around the Children   */
+    padding            : 16px 16px 16px 16px         ; /* Little Padding             */
+    margin             : auto                        ; /* No Margin                  */
+    position           : fixed                       ; /* Stay relative to window    */
+    display            : inline-block                ; /* Block elements in a line   */
+    z-index            : 2                           ; /* Keep on top                */
+    box-sizing         : border-box                  ; /* Prevents overflow?         */
+    -webkit-transition : background-color 400ms ease ; /* Set the animation duration */
+    -moz-transition    : background-color 400ms ease ; /* Set the animation duration */
+    -ms-transition     : background-color 400ms ease ; /* Set the animation duration */
+    transition         : background-color 400ms ease ; /* Set the animation duration */
+
+}
+
+#wrapper_name {
+
+	font-size   : 24px		   ;
+	font-family : 'Montserrat' ;
+	font-weight : 500 		   ;	 
+
+}
+
+#wrapper_main {
+
+	width            : 100%    ; /* Fill the Parent Width      */
+    max-width        : 100%    ; /* Keep it at 100%            */
+    height           : auto    ; /* Wrap around the Children   */
+    background-color : #58a5f0 ; /* Nice Background Color      */
+
+}
+
+#wrapper_banner{
+
+    width                 : 100%      ; /* Fill the parent                   */
+    height                : 100vh     ; /* Fill the Window                   */
+    margin                : auto      ; /* Center Horizontally               */
+    display               : table     ; /* Line up the children              */
+    text-align            : center    ; /* Center the text                   */
+    background-repeat     : no-repeat ; /* Single Image                      */
+    background-size       : cover     ; /* we want to cover the block        */
+    background-attachment : fixed     ; /* For the neat floating effect      */
+
+}
+
+#wrapper_aboutme {
+
+	width          : 100%  	    			 ; /* Fill the Parent       */
+	margin         : auto  	    			 ; /* No Margin             */
+	display        : table-cell 		     ; /* Line up the children  */ 
+	vertical-align : middle     		     ; /* Set it to the middle  */
+	font-family    : 'Quicksand', sans-serif ; /* Fancy Font 			*/
+	font-weight    : 500 					 ; /* Somewhat heavy weight */
+	font-size      : 24px 					 ;
+
+}
+
+#wrapper_language_experience {
+
+	width     : 100%  ; /* Fill the parent           */
+	max-width : 100%  ; /* Never outwidth the parent */
+	display   : block ; /* Stack the elements        */
+
+}
+
+.section_title {
+
+	width            : 100%         ; /* Fill the parent           */
+	max-width        : 100%         ; /* Don't outwidth the parent */
+	background-color : transparent  ; /* Transparent Background    */
+	display 		 : inline-block ; /* Line up horizontally      */
+
+}
+
+.section_title_rectangle {
+
+	height           : 32px       ; /* Uniform Height        */
+	width            : auto       ; /* Wrap the content      */
+	padding  		 : 8px        ; /* Little bit of padding */
+	background-color : #ffff8b    ; /* Color 				 */
+	margin 			 : auto       ; /* No Margin  			 */
+	display          : table      ; /* Set these as tables   */
+	float   		 : left       ; /* Keep left  			 */
+
+}
+
+.section_title_text {
+
+	height         : 100%                     ; /* Fill the parent      */
+	width          : auto                     ; /* adjusted width       */
+	display        : table-cell               ; /* Set as a table Cell  */
+	vertical-align : middle                   ; /* Adjust to the middle */
+	font-size      : 24px                     ; /* Catch the attention  */
+	font-family    : 'Montserrat', sans-serif ; /* Fancy Font           */
+	font-weight    : 500                      ; /* Somewhat heavy       */
+
+
+}
+
+.section_title_triangle {
+
+	width         :  auto                  ; /* Auto Width       */
+	height        :  auto                  ; /* Auto Height      */
+	margin        :  auto                  ; /* No Margin        */
+	padding       :  auto                  ; /* No Padding       */
+	float         :  left                  ; /* Keep left        */
+	display       :	 table                 ; /* Display as table */
+	border-top    :  0px solid transparent ; /* First line       */
+	border-left   : 48px solid #ffff8b     ; /* Second Line      */
+	border-bottom : 48px solid transparent ; /* Third Line       */
+
+}
+
+.language_box {
+
+	width            : auto         ; /* Wrap Content          */
+	height           : auto         ; /* Wrap Content          */
+	margin           : 8px          ; /* Space out             */
+	display          : inline-block ; /* Line up the boxes 	   */
+	background-color : transparent  ; /* Keep them transparent */
+
+}
+
+.language_title {
+
+	background-color        : #0277bd    ; /* Neat Color                 */
+	font-size               : 24px       ; /* Readable size              */
+	font-family             : sans-serif ; /* Fancy Font          		 */
+	text-transform 			: uppercase  ; /* Keep the letters uppercase */
+	text-align  			: center     ;
+	padding                 : 8px  	     ; /* Pad the inside             */
+	border-top-left-radius  : 4px        ; /* Top Corner Radius          */
+	border-top-right-radius : 4px        ; /* Top Corner Radius          */
+
+}
+
+.language_proficiency {
+
+	background-color           : #ffee58                 ;
+	text-align  			   : center                  ;
+	font-size                  : 16px                    ;
+	font-family 			   : 'Open Sans', sans-serif ;
+	font-weight 			   : 600                     ;
+	text-transform 			   : lowercase               ;
+	padding                    : 4px  	                 ;
+	border-bottom-left-radius  : 4px                     ;
+	border-bottom-right-radius : 4px                     ;
+
+}
